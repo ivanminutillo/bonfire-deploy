@@ -6,6 +6,6 @@ s1=$(openssl rand -base64 128)
 s2=$(openssl rand -base64 128)
 s3=$(openssl rand -base64 128)
 
-abra app secret insert $1 secret_key_base v3 "$s1"
-abra app secret insert $1 signing_salt v3 "$s2"
-abra app secret insert $1 encryption_salt v3 "$s3"
+abra app secret insert $1 secret_key_base v2 "$s1"
+abra app secret insert $1 signing_salt v2 "$s2"
+abra app secret insert $1 encryption_salt v2 "$s3"
